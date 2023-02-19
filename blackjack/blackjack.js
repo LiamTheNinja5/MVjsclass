@@ -23,7 +23,7 @@ function start() {
     //Based on the total value, display appropriate alert messages
     if(handValue == 21){
         console.log(hand); 
-        alert('DEALER HAS BLACKJACK! || HAND: '+ hand); 
+        alert('DEALER HAS BLACKJACK! || HAND: '+hand); 
     } else if(handValue > 21){
         console.log(hand); 
         alert('DEALER BUSTED! || HAND: '+hand); 
@@ -32,7 +32,7 @@ function start() {
         alert('DEALER SCORE IS: ' + handValue+' || HAND: '+ hand); 
     } else {
         let lastCard = drawcard(); 
-        if(lastCard == 11 ){
+        if(lastCard == 11 && handValue > 10 ){
             lastCard = 1;
         }
         handValue = 0; 
