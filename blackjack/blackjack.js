@@ -4,7 +4,7 @@ let handValue = 0;
 let card = 0;
 let cardScore = 0;
 //Function to initialize a game (e.g. draw two cards, calculate sum total, etc...) 
-function test() { 
+function start() { 
     hand = []; 
     handValue = 0; 
 
@@ -23,22 +23,25 @@ function test() {
     //Based on the total value, display appropriate alert messages
     if(handValue == 21){
         console.log(hand); 
-        alert('DEALER HAS BLACKJACK!'); 
+        alert('DEALER HAS BLACKJACK! || HAND: '+ hand); 
     } else if(handValue > 21){
         console.log(hand); 
-        alert('DEALER BUSTED!'); 
+        alert('DEALER BUSTED! || HAND: '+hand); 
     } else if(handValue >= 17){
         console.log(hand); 
-        alert('DEALER SCORE IS: ' + handValue); 
+        alert('DEALER SCORE IS: ' + handValue+' || HAND: '+ hand); 
     } else {
         let lastCard = drawcard(); 
+        if(lastCard == 11 ){
+            lastCard = 1;
+        }
         handValue = 0; 
         hand.push(lastCard) 
         hand.sort().reverse(); 
         console.log(hand+"@@@"); 
         hand.forEach(sumCards); 
         console.log(hand); 
-        alert('DEALER HITS WITH A ' + lastCard + " || " + "DEALER TOTAL: " + handValue) 
+        alert('DEALER HITS WITH A ' + lastCard + " || " + "DEALER TOTAL: " + handValue + ' || HAND: '+ hand) 
     } 
     
     //reseting the variables for the next game 
