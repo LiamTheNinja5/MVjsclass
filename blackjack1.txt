@@ -1,8 +1,21 @@
-"deal" new cards by picking a random number from an array (1-13)
+"deal" new card by picking a random number from an array (1-13)
+
+assign card value
+
+"deal" new card by picking a random number from an array (1-13)
+
+assign card value
+
+Sum card total
+
+if the first two cards are an ace and a card worth 10 announce that the dealer has blackjack
+
+if the totle is more then 21 announce dealer is busted
+
 if the first card and the secound card equal less then 17 announce the total and the dealer is hitting
 
 "deal" a new card if the new score is beween 17 and 21 announce the total 
 
-if the totle is more then 21 announce dealer is busted
 
-if the first two cards are an ace and a card worth 10 announce that the dealer has blackjack
+
+
