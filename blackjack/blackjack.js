@@ -75,3 +75,4 @@ function sumCards(thisCard){
     console.log('handValue: '+handValue) 
      return handValue; 
 } 
+
