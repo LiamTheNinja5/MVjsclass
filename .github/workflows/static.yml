@@ -1,0 +1,44 @@
+# Simple workflow for deploying static content to GitHub Pages
+name: Deploy static content to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  # Single deploy job since we're just deploying
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: SSH Command
+      - uses: D3rHase/ssh-command-action@v0.2.2
+      - with:
+          # hostname / IP of the server
+          host: 75.12.95.49
+          # ssh port of the server
+          port: 22# optional, default is 22
+          # user of the server
+          user: root
+          # private ssh key registered on the server
+          private_key: 123
+          # Fingerprint of the server, preventing man-in-the-middle attacks
+          # command to be executed
+          command: echo 'Hello World' # optional, default is echo 'Hello world'
