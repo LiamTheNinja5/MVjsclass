@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/MVjsclass/dinner/dinner.css">
+    <title>PIZZA TIME!!!</title>
+</head>
+<body>
+    <!-- Table with name and toppings -->
+    <table border="1" cellspacing="0" cellpadding="2" class="tabletitle">
+        <tbody>
+          <tr>
+            <td>
+              <p><strong>Name</strong></p>
+            </td>
+            <td>
+              <p><strong>Slices</strong></p>
+            </td>
+            <td>
+              <p><strong>Acceptable Toppings</strong></p>
+            </td>
+            <td>
+              <!-- <p><button id="start" onclick="start();">Start</button></p> -->
+              <p><button id="clear" onclick="clearguests();">Clear</button></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Jane</p>
+            </td>
+            <td>
+              <p>2</p>
+            </td>
+            <td>
+              <p>Mushroom, onion, peppers, olives</p>
+            </td>
+            <td>
+                <button id="pos0" onclick="addGuest(jane, 0);">Add guest</button>
+              </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Lisa</p>
+            </td>
+            <td>
+              <p>3</p>
+            </td>
+            <td>
+              <p>Pepperoni, ham, pineapple</p>
+            </td>
+            <td>
+                <button id="pos1" onclick="addGuest(lisa, 1);">Add guest</button>
+              </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Taylor</p>
+            </td>
+            <td>
+              <p>3</p>
+            </td>
+            <td>
+              <p>Extra cheese, pepperoni, sausage, bacon</p>
+            </td>
+            <td>
+                <button id="pos2" onclick="addGuest(taylor, 2);">Add guest</button>
+              </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Chris</p>
+            </td>
+            <td>
+              <p>2</p>
+            </td>
+            <td>
+              <p>Mushroom, sausage, bacon, ham, onion, peppers</p>
+            </td>
+            <td>
+                <button id="pos3" onclick="addGuest(chris, 3);">Add guest</button>
+              </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Alyssa</p>
+            </td>
+            <td>
+              <p>1</p>
+            </td>
+            <td>
+              <p>Pepperoni, bacon</p>
+            </td>
+            <td>
+                <button id="pos4" onclick="addGuest(alyssa, 4);">Add guest</button>
+              </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Will</p>
+            </td>
+            <td>
+              <p>2</p>
+            </td>
+            <td>
+              <p>Extra cheese, sausage, bacon, onion, peppers, olives</p>
+            </td>
+            <td>
+                <button id="pos5" onclick="addGuest(will, 5);">Add guest</button>
+              </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Jessica</p>
+            </td>
+            <td>
+              <p>2</p>
+            </td>
+            <td>
+              <p>Pepperoni, bacon, ham, pineapple, onion, peppers</p>
+            </td>
+            <td>
+                <button id="pos6" onclick="addGuest(jessica, 6);">Add guest</button>
+              </td>
+          </tr>
+
+        </tbody>
+    </table>
+      
+    <!-- list of guests -->
+<h1>List of guests:</h1>
+<p id="list">[list of people]</p>
+
+    <script src="/MVjsclass/dinner/dinner.js"></script>
+</body>
+</html>
