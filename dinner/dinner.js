@@ -72,7 +72,7 @@ function addGuest(name,pos){
     totalGuests= totalGuests + 1;
 
     toppingList = [];
-    for(let i=0; i<9; i++){
+    for(let i=0; i<10; i++){
         toppings = [    
             mushroom,
             onion,
