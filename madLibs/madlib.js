@@ -4,7 +4,8 @@ let list = 0
 
 function getwords() {
     list = list + 1;
-
+    document.getElementById('fname').value = ''
+    document.getElementById('count').innerHTML = 8 - list;
     if (list == 8) {
         console.log('all are fileld')
         document.getElementById('main').style.display = "inline";
