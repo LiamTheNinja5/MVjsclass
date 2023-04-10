@@ -9,8 +9,8 @@
   <body onload="onload()">
     <form id="form">
         <div id="box">
-      <label>Please type a: <span id="WT">Noun</span></label><br />
-      <input type="text" id="fname" name="fname" value="" /><br />
+      <label>Please type a: <span id="WT"></span></label><br />
+      <input type="text" id="fname" name="fname" value=""  onkeydown = "test()"><br />
       <p>You have [<span id="count"></span>] words left</p>
       <input type="button" value="Submit" onclick="getwords()" />
         </div>

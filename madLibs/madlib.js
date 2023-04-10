@@ -4,7 +4,7 @@ let list = 0
 
 function getwords() {
     list = list + 1;
-    document.getElementById('fname').value = ''
+    
     document.getElementById('count').innerHTML = 8 - list;
     if (list == 8) {
         console.log('all are fileld')
@@ -31,18 +31,21 @@ function getwords() {
         }
     }
 
-    
+    document.getElementById('fname').value = ''
 }
 
 function onload() {
     document.getElementById('main').style.display = "none";
+
 }
 
 function restart() {
     window.location.reload();
 }
 
-
+function test() {
+    if (event.key == 13)document.getElementById('btnSearch').click()
+}
 
 
 
