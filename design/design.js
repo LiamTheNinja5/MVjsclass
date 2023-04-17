@@ -40,7 +40,6 @@ function hideset(){
 }
 function showset(){
     document.getElementById('showset').style.display = "none"
-    console.log('gtbakigbekibg')
     document.getElementById('settings').style.display = "inline"
 }
 
