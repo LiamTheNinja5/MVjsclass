@@ -8,11 +8,16 @@
     <title>Swimming pools</title>
 </head>
 <body id="main">
+    <input type="button" value="Show Settings" id="showset" onclick="showset()" style="display: none;">
     <div id="settings">
-        <input type="button" value="Light" onclick="light()" id="light">
+        <p>Page Theme: <span id="s1">Light</span></p>
+        <p>Open dyslexic font is: <span id="s2">Off</span></p>
         <input type="button" value="Dark" onclick="dark()" id="dark"/>
+        <input type="button" value="Light" onclick="light()" id="light">
         <input type="button" value="Opendyslexic" onclick="opendyslexic()" />
+        <input type="button" value="Hide settings" id='hideset' onclick="hideset()" />
     </div>
+    <div id="content">
     <h1>The Diffrent types of Swimming pools</h1>
     <p>There are diffrent types of swimmings pools, <br>
     Long course, Short course, and Recreational pools.</p>
@@ -28,7 +33,7 @@
     <h4>A Recreational pool:</h4>
     <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Hotel_swimming_pool_-_Hyatt_Regency_M%C3%A9rida_2006.jpg" alt="A High school pool" height="200px">
     <a href="https://commons.wikimedia.org/wiki/File:Hotel_swimming_pool_-_Hyatt_Regency_M%C3%A9rida_2006.jpg">Nayuki</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons
-
+    </div>
     <script src="/MVjsclass/design/design.js"></script>
 </body>
 </html>
