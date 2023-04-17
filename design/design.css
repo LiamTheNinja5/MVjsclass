@@ -1,0 +1,16 @@
+@font-face {
+    font-family: opendyslexic;
+    src: url(OpenDyslexic3-Regular.ttf);
+  }
+
+.dark{
+    background-color: #303030;
+    color: #ffffff;
+}
+.opendyslexic{
+    font-family: opendyslexic;
+
+}
+.hide{
+    display: none;
+}
