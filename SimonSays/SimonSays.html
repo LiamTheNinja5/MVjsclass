@@ -7,13 +7,16 @@
     <link rel="stylesheet" type="text/css" href="SimonSays.css">
     <title>Simon Says</title>
 </head>
-<body>
+<body id="body">
     <input id='start' type="button" value="Start" onclick="start()">
     <div class="game" id="game" style="display: none">
-    <div class="box" id="b1"><input class="btn" type="button" value="1" onclick="1()"></div>
-    <div class="box" id="b2"><input class="btn" type="button" value="2" onclick="2()"></div>
-    <div class="box" id="b3"><input class="btn" type="button" value="3" onclick="3()"></div>
-    <div class="box" id="b4"><input class="btn" type="button" value="4" onclick="4()"></div>
+        <p>Score: <span id="score"></span></p>
+    <div class="box r" id="box1"><input class="btn" type="button" value="1" onclick="btn(1)"></div>
+    <div class="box b " id="box2"><input class="btn" type="button" value="2" onclick="btn(2)"></div>
+    <div class="box y " id="box3"><input class="btn" type="button" value="3" onclick="btn(3)"></div>
+    <div class="box g" id="box4"><input class="btn" type="button" value="4" onclick="btn(4)"></div>
+    <p id="tell">[]</p>
+
     </div>
     <script src="/MVjsclass/SimonSays/SimonSays.js"></script>
 </body>
