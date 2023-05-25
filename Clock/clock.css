@@ -1,0 +1,12 @@
+.Style {
+	background-color:#6c6c6c;
+	border:#000000 2px inset;
+	padding:6px;
+	color:rgb(128, 255, 0);
+	font-family:monospace;
+    font-size:26px;
+    font-weight:bold;
+	letter-spacing: 2px;
+	display:inline;
+    
+}
