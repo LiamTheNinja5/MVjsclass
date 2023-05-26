@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script defer src="/MVjsclass/NKAT_D/index.js"></script>
+    <title>NKAT</title>
+</head>
+
+    <body class="background" onload='document.form1.text1.focus()'>
+        <!-- Background -->
+        <div >
+          <img src="/MVwebdesign/Assets/nkat/logo2.png" class="logo" onclick="link(6)">
+            <!-- Content Box -->
+            <div id="content">
+                <!-- Level box -->
+                <div class="box">
+                    <ul type='disc'>
+                        <li> T-shirt <ul type='disc'>
+                            <li> With logo - $15 </li>
+                            <li> With name + logo - $20 </li>
+                          </ul>
+                        </li>
+                        <li> Hoodie <ul type='disc'>
+                            <li> Red - $25 </li>
+                            <li> Black - $25 </li>
+                            <li> Gray - $25 </li>
+                          </ul>
+                        </li>
+                        <li> Hats <ul type='disc'>
+                            <li> Cap - $10 </li>
+                            <li> Stocking cap - $15 </li>
+                          </ul>
+                        </li>
+                      </ul>
+                </div>
+                <!-- Form -->
+        <div class="box">
+            <form name="form1">
+              <fieldset>
+                <legend> Sign up for the next gear drop </legend>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="text1" value="example@example.com"><br><br>
+                <button onclick="ValidateEmail(document.form1.text1)">Submit</button>
+              </fieldset>
+              
+              </form>
+              
+          </div>
+
+                <!-- image -->
+                <div class="box">
+                    <p>The stocking cap:</p>
+                    <img src="/MVwebdesign/Assets/nkat/hat1.png" alt="A stocking hat with the team logo" class="hat">
+                </div>
+
+            </div>
+
+        </div>
+        <p id="timer" style="display: none;" ></p>
+    </body>
+
+</html>

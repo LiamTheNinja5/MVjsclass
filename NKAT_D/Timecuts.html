@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script defer src="/MVjsclass/NKAT_D/index.js"></script>
+    <title>NKAT</title>
+  </head>
+  <body class="background" onload="annoyUsers()">
+    <!-- Background -->
+    <div>
+      <img src="/MVwebdesign/Assets/nkat/logo2.png" class="logo" onclick="link(6)">
+      <!-- Content Box -->
+      <div id="content">
+        <!-- Level box -->
+        <div class="box">
+          <table class="blueTable">
+            <thead>
+              <tr>
+                <th colspan="3">Open Girls</th>
+                <th colspan="1">Event</th>
+                <th colspan="3">Open Boys</th>
+              </tr>
+              <tr>
+                <th>LCM</th>
+                <th>SCM</th>
+                <th>SCY</th>
+                <th>&nbsp;</th>
+                <th>SCM</th>
+                <th>SCY</th>
+                <th>LCM</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>29.69 </td>
+                <td>28.89</td>
+                <td>25.99</td>
+                <td>50 Freestyle</td>
+                <td>22.99</td>
+                <td>25.59</td>
+                <td>26.39</td>
+              </tr>
+              <tr>
+                <td>1:03.79</td>
+                <td>1:02.19</td>
+                <td>55.99</td>
+                <td>100 Freestyle</td>
+                <td>49.99</td>
+                <td>55.49</td>
+                <td>58.29</td>
+              </tr>
+              <tr>
+                <td>2:18.69</td>
+                <td>2:15.49</td>
+                <td>2:01.99</td>
+                <td>200 Freestyle</td>
+                <td>1:50.99</td>
+                <td>2:03.29</td>
+                <td>2:06.49</td>
+              </tr>
+              <tr>
+                <td>4:45.59</td>
+                <td>4:32.49</td>
+                <td>5:19.99</td>
+                <td>500/400 Freestyle</td>
+                <td>4:59.99</td>
+                <td>4:14.39</td>
+                <td>4:27.79</td>
+              </tr>
+              <tr>
+                <td>10:05.99</td>
+                <td>9:53.19</td>
+                <td>11:18.99</td>
+                <td>1000/800 Freestyle</td>
+                <td>10:35.99</td>
+                <td>9:14.89</td>
+                <td>9:27.69</td>
+              </tr>
+              <tr>
+                <td>19:15.69</td>
+                <td>18:51.69</td>
+                <td>18:52.99</td>
+                <td>1650/1500 Freestyle</td>
+                <td>17:48.99</td>
+                <td>17:46.39</td>
+                <td>18:10.39</td>
+              </tr>
+              <tr>
+                <td>1:09.99</td>
+                <td>1:08.89</td>
+                <td>1:01.99</td>
+                <td>100 Backstroke</td>
+                <td>57.99</td>
+                <td>1:04.39</td>
+                <td>1:05.59</td>
+              </tr>
+              <tr>
+                <td>2:31.99</td>
+                <td>2:28.79</td>
+                <td>2:13.99</td>
+                <td>200 Backstroke</td>
+                <td>2:07.99</td>
+                <td>2:22.09</td>
+                <td>2:24.49</td>
+              </tr>
+              <tr>
+                <td>1:20.79</td>
+                <td>1:18.80</td>
+                <td>1:10.99</td>
+                <td>100 Breaststroke</td>
+                <td>1:03.99</td>
+                <td>1:11.09</td>
+                <td>1:12.99</td>
+              </tr>
+              <tr>
+                <td>2:58.29</td>
+                <td>2:54.29</td>
+                <td>2:36.99</td>
+                <td>200 Breaststroke</td>
+                <td>2:21.99</td>
+                <td>2:37.69</td>
+                <td>2:41.69</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Time trials count down -->
+        <div class="box" >
+          <h3>Count down to Olmpic Time Trials:</h3>
+          <p id="timer"></p>
+        </div>
+        <div class="box" id="timetrials">
+          <h3>How close are you to Time Trials?</h3>
+          <p>input your 100 Free time here:</p>
+          <span class="timebox">
+          <input type="text" id="utime1" name="time1" value="0">
+          :  
+          <input type="text" id="utime2" name="time2" value="0">
+          .
+          <input type="text" id="utime3" name="time3" value="0"> 
+          <button onclick="CaculateTime(1,2,3)">Submit</button>
+        </span>
+        <p id="timedisplaybox" style="display:none;">You need to drop [<span id="timedisplay"></span>] seconds to make Olympic Trials</p>
+        </div>
+        <!-- Photo --> 
+        <div class="box">
+          <img src="/MVwebdesign/Assets/nkat/meetorder.png" class="meet" alt="A image with the diffrent swim meets shown in order">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
